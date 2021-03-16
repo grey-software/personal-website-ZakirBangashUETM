@@ -13,12 +13,7 @@
           I'M
           <strong class="main-name"> Zakir Ullah Bangash</strong>
         </h1>
-        <!-- <v-date-picker
-  :value="null"
-  color="indigo"
-  is-dark
-  is-range
-  /> -->
+  
   <div class="type">
        <vue-typer
           :text="[
@@ -31,9 +26,9 @@
           :repeat='Infinity'
   :shuffle='false'
   initial-action='typing'
-  :pre-type-delay='2000'
+  :pre-type-delay='200'
   :type-delay='70'
-  :pre-erase-delay='2000'
+  :pre-erase-delay='1000'
   :erase-delay='50'
   erase-style='backspace'
   :erase-on-complete='true'
@@ -42,30 +37,6 @@
 
   </div>
        
-        <!-- <h1
-          class="title-font sm:text-4xl text-3xl mb-4 font-medium "
-        >
-          Before they sold out <br class="hidden lg:inline-block" />readymade
-          gluten
-        </h1> -->
-        <!-- <p class="mb-8 leading-relaxed">
-          Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
-          plant cold-pressed tacos poke beard tote bag. Heirloom echo park
-          mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon
-          try-hard chambray.
-        </p> -->
-        <!-- <div class="flex justify-center">
-          <button
-            class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
-          >
-            Button
-          </button>
-          <button
-            class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
-          >
-            Button
-          </button>
-        </div> -->
       </div>
       <div class="image md:w-5/12 w-full">
         <img class="imag" alt="hero" src="~/assets/computer.svg" />
@@ -106,7 +77,7 @@ export default {};
 section {
   position: relative;
   z-index: -1;
-  height: 629px !important;
+  /* height: 629px !important; */
   
 
   background-image: linear-gradient(
