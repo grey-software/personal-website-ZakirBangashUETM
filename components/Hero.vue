@@ -1,31 +1,60 @@
 <template>
   <section class="text-white body-font">
     <div
-      class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+      class=" home-section container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
     >
       <div
-        class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+        class="home-header lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
       >
-       <h1 class="heading">
-                Greetings Everyone! <span class="wave">👋🏻</span>
-              </h1>
-               <h1 class="heading-name">
-                I'M
-                <strong class="main-name"> Zakir Ullah Bangash</strong>
-              </h1>
+        <h1 class="heading">
+          Greetings Everyone! <span class="wave">👋🏻</span>
+        </h1>
+        <h1 class="heading-name">
+          I'M
+          <strong class="main-name"> Zakir Ullah Bangash</strong>
+        </h1>
+        <!-- <v-date-picker
+  :value="null"
+  color="indigo"
+  is-dark
+  is-range
+  /> -->
+  <div class="type">
+       <vue-typer
+          :text="[
+            'I am React Developer',
+            'I am Software Engineer',
+            'I am Deep learning learner',
+            'I am a Sharp learner',
+            
+          ]"
+          :repeat='Infinity'
+  :shuffle='false'
+  initial-action='typing'
+  :pre-type-delay='2000'
+  :type-delay='70'
+  :pre-erase-delay='2000'
+  :erase-delay='50'
+  erase-style='backspace'
+  :erase-on-complete='true'
+   :caret-animation='blink'
+        ></vue-typer>
+
+  </div>
+       
         <!-- <h1
           class="title-font sm:text-4xl text-3xl mb-4 font-medium "
         >
           Before they sold out <br class="hidden lg:inline-block" />readymade
           gluten
         </h1> -->
-        <p class="mb-8 leading-relaxed">
+        <!-- <p class="mb-8 leading-relaxed">
           Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
           plant cold-pressed tacos poke beard tote bag. Heirloom echo park
           mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon
           try-hard chambray.
-        </p>
-        <div class="flex justify-center">
+        </p> -->
+        <!-- <div class="flex justify-center">
           <button
             class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
           >
@@ -36,17 +65,12 @@
           >
             Button
           </button>
-        </div>
+        </div> -->
       </div>
-      <div class="md:w-4/12  w-full">
-        <img
-          class="imag"
-          alt="hero"
-          src="~/assets/computer.svg"
-        />
+      <div class="image md:w-5/12 w-full">
+        <img class="imag" alt="hero" src="~/assets/computer.svg" />
       </div>
     </div>
-   
   </section>
 </template>
 
@@ -55,15 +79,35 @@ export default {};
 </script>
 
 <style scooped>
-.image {
-  width: 70% !important;
-  float: right;
+
+
+
+.home-section {
+
+ padding: 9rem 0 2rem !important;
+  color: whitesmoke;
+  text-align: left;
 }
 
+.home-header {
+  height: 453px !important;
+}
+.type {
+  padding: 50px;
+  text-align: left;
+  width:100% !important;
+  
+}
+.image {
+  width: 35% !important;
+
+}
 
 section {
   position: relative;
   z-index: -1;
+  height: 629px !important;
+  
 
   background-image: linear-gradient(
       to bottom left,
@@ -71,10 +115,8 @@ section {
       rgba(12, 10, 22, 0.863)
     ),
     url("~assets/home-bg.jpg");
-  object-fit: contain;
-  background-position: top center;
+    background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
@@ -128,4 +170,50 @@ section {
 .main-name {
   color: #cd5ff8;
 }
+
+/* @keyframes rocking {
+  0%,100% {transform: rotateZ(-10deg);},
+  50%     {transform: rotateZ(10deg);}
+} */
+
+.vue-typer {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+.vue-typer .custom.char.typed {
+    font-size: 2.2em !important;
+  color: #be6adf !important;
+  font-weight: 600 !important;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .vue-typer .custom.char.typed {
+    font-size: 1.4em !important;
+    font-weight: 500 !important;
+  
+  }
+  .Typewriter__cursor {
+    display: none !important;
+  }
+  .image {
+    width: 80% !important;
+    margin-top: -80px!important;
+  }
+}
+
+/* .vue-typer .custom.char.selected {
+  color: #E91E63;
+} */
+/* 
+.vue-typer .custom.caret {
+  animation: rocking 1s ease-in-out 0s infinite;
+} */
+/* .vue-typer .custom.caret.typing {
+  background-color: #009688;
+}
+.vue-typer .custom.caret.selecting {
+  display: inline-block;
+  background-color: #E91E63;
+} */
 </style>
