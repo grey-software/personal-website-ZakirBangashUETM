@@ -1,7 +1,7 @@
 <template>
   <section class="text-white body-font">
     <div
-      class=" home-section container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+      class="home-section container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
     >
       <div
         class="home-header lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
@@ -13,33 +13,30 @@
           I'M
           <strong class="main-name"> Zakir Ullah Bangash</strong>
         </h1>
-  
-  <div class="type">
-       <vue-typer
-          :text="[
-            'I am React Developer',
-            'I am Software Engineer',
-            'I am Deep learning learner',
-            'I am a Sharp learner',
-            
-          ]"
-          :repeat='Infinity'
-  :shuffle='false'
-  initial-action='typing'
-  :pre-type-delay='200'
-  :type-delay='70'
-  :pre-erase-delay='1000'
-  :erase-delay='50'
-  erase-style='backspace'
-  :erase-on-complete='true'
-   :caret-animation='blink'
-        ></vue-typer>
 
-  </div>
-       
+        <div class="type">
+          <vue-typer
+            :text="[
+              'I am React Developer',
+              'I am Software Engineer',
+              'I am Deep learning learner',
+              'I am a Sharp learner',
+            ]"
+            :repeat="Infinity"
+            :shuffle="false"
+            initial-action="typing"
+            :pre-type-delay="200"
+            :type-delay="70"
+            :pre-erase-delay="1000"
+            :erase-delay="50"
+            erase-style="backspace"
+            :erase-on-complete="true"
+            :caret-animation="blink"
+          ></vue-typer>
+        </div>
       </div>
       <div class="image md:w-5/12 w-full">
-        <img class="imag" alt="hero" src="~/assets/computer.svg" />
+        <img  alt="hero" src="~/assets/computer.svg" />
       </div>
     </div>
   </section>
@@ -50,12 +47,8 @@ export default {};
 </script>
 
 <style scooped>
-
-
-
 .home-section {
-
- padding: 9rem 0 2rem !important;
+  padding: 9rem 0 2rem !important;
   color: whitesmoke;
   text-align: left;
 }
@@ -66,27 +59,27 @@ export default {};
 .type {
   padding: 50px;
   text-align: left;
-  width:100% !important;
-  
+  width: 100% !important;
 }
 .image {
-  width: 35% !important;
+  width: 40% !important;
+  
+}
 
+.image > img {
+  margin-top: -150px;
 }
 
 section {
   position: relative;
   z-index: -1;
-  /* height: 629px !important; */
-  
-
   background-image: linear-gradient(
       to bottom left,
       rgba(17, 16, 16, 0.678),
       rgba(12, 10, 22, 0.863)
     ),
     url("~assets/home-bg.jpg");
-    background-position: top center;
+  background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
@@ -142,49 +135,29 @@ section {
   color: #cd5ff8;
 }
 
-/* @keyframes rocking {
-  0%,100% {transform: rotateZ(-10deg);},
-  50%     {transform: rotateZ(10deg);}
-} */
-
 .vue-typer {
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 .vue-typer .custom.char.typed {
-    font-size: 2.2em !important;
+  font-size: 2.2em !important;
   color: #be6adf !important;
   font-weight: 600 !important;
 }
-
-
 
 @media screen and (max-width: 767px) {
   .vue-typer .custom.char.typed {
     font-size: 1.4em !important;
     font-weight: 500 !important;
-  
   }
   .Typewriter__cursor {
     display: none !important;
   }
   .image {
     width: 80% !important;
-    margin-top: -80px!important;
+    margin-top: -80px !important;
   }
+  .image > img {
+  margin-top: 0px;
 }
-
-/* .vue-typer .custom.char.selected {
-  color: #E91E63;
-} */
-/* 
-.vue-typer .custom.caret {
-  animation: rocking 1s ease-in-out 0s infinite;
-} */
-/* .vue-typer .custom.caret.typing {
-  background-color: #009688;
 }
-.vue-typer .custom.caret.selecting {
-  display: inline-block;
-  background-color: #E91E63;
-} */
 </style>
