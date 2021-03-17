@@ -9,8 +9,11 @@
       <span class="ml-3 text-xl text-white">ZB</span>
     </a>
     <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-      <a class="mr-10 ">Home</a>
-      <a class="mr-10 ">About</a>
+       <NuxtLink class="mr-10 " to="/">Home</NuxtLink>
+    
+      <NuxtLink  class="mr-10 " to="/about">
+          About
+      </NuxtLink>
       <a class="mr-10 ">Projects</a>
      
     </nav>

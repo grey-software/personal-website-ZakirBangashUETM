@@ -7,9 +7,16 @@
         <h3>Copyright © 2021 ZB</h3>
     </div>
     <div class="footer__icons">
+      <a href="https://pk.linkedin.com/in/zakir-bangash-6b33a0199">
     <span class="icon"><font-awesome-icon :icon="['fab', 'linkedin']"/></span>
+    </a>
+    <a href="https://www.facebook.com/zakir.bangash.16">
     <span class="icon"><font-awesome-icon :icon="['fab', 'facebook']"/></span>
+    </a>
+    <a href="https://www.gitub.com/zakirBangash">
     <span class="icon"><font-awesome-icon :icon="['fab', 'github']"/></span>
+    </a>
+    <a href="https://www.instagram.com/zakirbangash99/"></a>
     <span class="icon"><font-awesome-icon :icon="['fab', 'instagram']"/></span>
     </div>
 </footer>

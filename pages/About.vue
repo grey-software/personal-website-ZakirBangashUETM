@@ -1,8 +1,8 @@
 <template>
-  <section class="about">
+  <section class=" about relative pt-40 pb-8 bg-gray-900 text-white pl-32">
     <div class="container mx-auto flex px-5 md:flex-row flex-col items-center">
       <div class="about__left">
-        <h1>Know Who <strong class="purple">I'M</strong></h1>
+        <h1 class="text-center pb-5 pt-1">Know Who <strong class="purple">I'M</strong></h1>
     
           <blockquote>
             <p>
@@ -303,10 +303,7 @@ export default {};
 }
 
 .about__left > h1 {
-  text-align: center;
   font-size: 2.1em !important;
-  padding-bottom: 20px !important;
-  padding-top: 5px !important;
 }
 
 .about__icon {
@@ -371,6 +368,7 @@ export default {};
 
 .icons:hover {
   transform: scale(1.05) !important;
+  overflow: hidden  !important;
   border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
 }
 
