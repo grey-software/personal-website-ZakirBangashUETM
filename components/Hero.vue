@@ -1,5 +1,5 @@
 <template>
-  <section class="text-white body-font">
+  <section class=" sectionOne text-white body-font">
     <div
       class="hero__section container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
     >
@@ -18,6 +18,7 @@
 
         <div class="hero__typer">
           <vue-typer
+          class="ajj"
             :text="[
               'I am a committed Student of BSc Software Engineering',
               'I am a React Developer',
@@ -51,9 +52,9 @@
 export default {};
 </script>
 
-<style scoped>
+<style>
 
-section {
+.sectionOne {
   position: relative;
   z-index: -1;
   background-image: linear-gradient(
@@ -121,6 +122,7 @@ section {
 .hero__typer {
   padding: 50px;
   text-align: left;
+  
   width: 100% !important;
 }
 
@@ -179,6 +181,14 @@ section {
   font-size: 2.2em !important;
   color: #be6adf !important;
   font-weight: 600 !important;
+}
+.caret.custom.vue-typer-caret-blink.typing{
+  color: red !important;
+}
+
+
+.ajj {
+  color: red  !important;
 }
 
 @media screen and (max-width: 767px) {
