@@ -48,7 +48,7 @@
   
 
     <div class="about__tech__icons">
-      <div class="icons hover:bg-purple-700">
+      <div class="icons">
         <svg
           class="sv"
           xmlns="http://www.w3.org/2000/svg"

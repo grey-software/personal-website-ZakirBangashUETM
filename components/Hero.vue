@@ -20,7 +20,7 @@
           <vue-typer
             :text="[
               'I am a committed Student of BSc Software Engineering',
-              'I am React Developer',
+              'I am a React Developer',
               'I am a team player',
               'I am a Sharp learner',
               'I can lead and I can manage'
@@ -51,7 +51,7 @@
 export default {};
 </script>
 
-<style scooped>
+<style scoped>
 
 section {
   position: relative;
