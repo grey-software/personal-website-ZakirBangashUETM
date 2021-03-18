@@ -6,6 +6,7 @@
       <div
         class="hero__header lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
       >
+      <div class="h">
         <h1 class="hero__heading">
           Greetings Everyone! <span class="hero__wave">👋🏻</span>
         </h1>
@@ -13,6 +14,7 @@
           I'M
           <strong class="hero__heading__main__name"> Zakir Ullah Bangash</strong>
         </h1>
+        </div>
 
         <div class="hero__typer">
           <vue-typer
@@ -88,6 +90,30 @@ section {
   padding-left: 45px !important;
 }
 
+.hero__image {
+  width: 40% !important;
+  
+}
+.hero__image > img {
+  margin-top: -50px;
+}
+@media screen and (max-width: 768px) {
+  .hero__heading {
+    font-size: 1.4em  !important;
+
+  }
+  .hero__heading__name {
+      font-size: 1.8em !important;
+  }
+  .hero__image > img {
+    margin-top: -30px  !important;
+    
+  }
+  .h {
+    margin-top: 70px  !important;
+  }
+}
+
 .hero__heading__main__name {
   color: #cd5ff8;
 }
@@ -103,9 +129,7 @@ section {
   
 }
 
-.hero__image > img {
-  margin-top: -150px;
-}
+
 
 
 

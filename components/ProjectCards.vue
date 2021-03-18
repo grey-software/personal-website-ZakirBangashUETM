@@ -1,15 +1,15 @@
 <template>
     <div class="projectCard">
-        <img src="~/assets/corona.jpg" alt="">
+        <img :src="require(`~/assets/${img}`)" alt="">
         <div class="projectCard__body">
-            <h1>Covid 19 Tracker</h1>
-            <p>This is small project developed with React and Chart.js</p>
+            <h1>{{title}}</h1>
+            <p>{{description}}</p>
                   <div class="flex py-5 justify-center">
+                      <a :href="url">
         <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-            <font-awesome-icon :icon="['fas', 'externallink']"  />View Project
-            <i class="fas fa-external-link-alt"></i>
+            View Project
         </button>
-        
+        </a>
       </div>
 
         </div>
@@ -19,25 +19,43 @@
 
 <script>
 export default {
+    props:['img','title','description','url'],
     
 }
 </script>
 
 <style scoped>
 .projectCard {
-    box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+    /* width: 30% !important; */
+    width: 350px  !important;
+    height: 500px  !important;
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  /* margin: 10px auto  !important; */
   color: white !important;
+
   background-color: transparent !important;
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
-  height: 100% !important;
+  
+}
+
+@media  screen and (max-width:576px) {
+    .projectCard{
+    width: 300px  !important;
+    }
+}
+
+@media screen and (max-width:280px) {
+    .projectCard {
+        width:180px !important;
+    }
 }
 
 .projectCard > img {
     padding: 20px;
     object-fit: contain;
     width: 100%;
-    border-radius: 10%;
+    border-radius: 15%;
     display: flex  !important;
     justify-content: center  !important;
     align-items: center !important;

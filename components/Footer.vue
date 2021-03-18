@@ -1,10 +1,10 @@
 <template>
   <footer class="text-gray-600 body-font">
     <div class="footer__dev">
-      <h3>Designed and Developed by ZakirBangash</h3>
+      <h3>Developed by ZakirBangash</h3>
     </div>
     <div class="footer__copyRight">
-        <h3>Copyright © 2021 ZB</h3>
+        <h3>Copyright © {{dataPicker}} ZB</h3>
     </div>
     <div class="footer__icons">
       <a href="https://pk.linkedin.com/in/zakir-bangash-6b33a0199">
@@ -13,17 +13,27 @@
     <a href="https://www.facebook.com/zakir.bangash.16">
     <span class="icon"><font-awesome-icon :icon="['fab', 'facebook']"/></span>
     </a>
-    <a href="https://www.gitub.com/zakirBangash">
+    <a href="https://www.github.com/zakirBangash">
     <span class="icon"><font-awesome-icon :icon="['fab', 'github']"/></span>
     </a>
-    <a href="https://www.instagram.com/zakirbangash99/"></a>
+
+    <a href="https://www.instagram.com/zakirbangash99">
     <span class="icon"><font-awesome-icon :icon="['fab', 'instagram']"/></span>
+    </a>
     </div>
 </footer>
 </template>
 
 <script>
 export default {
+  computed: {
+    dataPicker(){
+        let date = new Date();
+        return date.getFullYear();
+    }
+  
+    
+  }
 
 }
 </script>
@@ -32,7 +42,8 @@ export default {
 footer {
   display: flex;
   justify-content:space-between;
-   background-color: rgb(10, 4, 22);
+  align-items: center;
+  background-color: rgb(10, 4, 22);
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;

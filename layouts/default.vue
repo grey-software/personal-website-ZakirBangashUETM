@@ -17,6 +17,8 @@ html {
     'Helvetica Neue',
     Arial,
     sans-serif;
+   
+-webkit-overflow-scrolling: touch;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -31,6 +33,8 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+  overflow-x: hidden  !important;
+  
 }
 
 .button--green {
